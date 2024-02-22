@@ -11,6 +11,7 @@ body {
   font-family: 'Courier New', Courier, monospace;
 }
 
+/* main and nav */
 #main .nav{
     display: flex;
     align-items: center;
@@ -42,6 +43,208 @@ body {
 }
 
 
+/* header */
+
+#main #heding-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* gap: 70px; */
+}
+
+#main #heding-page .left{
+    padding: 10px 50px 10px 50px;
+    background-color: rgb(255, 255, 255);
+    /* height: ; */
+    /* width: 50%; */
+}
+
+#main #heding-page .left h2, span, p{
+    /* font-size: 2vw; */
+    font-size: 20px;
+}
+
+#main #heding-page .left h4{
+    padding: 5px;
+}
+
+#main #heding-page .right{
+    background-color: rgb(255, 255, 255);
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#main #heding-page .right img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    padding: 10px 0;
+}
+
+#main #heding-page .left .stack-color:nth-child(1){
+    color: #00E661;
+}
+
+#main #heding-page .left .stack-color:nth-child(2){
+    color: rgb(93, 94, 93);
+}
+
+#main #heding-page .left .stack-color:nth-child(3){
+    color: #5ED3F3;
+}
+
+#main #heding-page .left .stack-color:nth-child(4){
+    color: #74AD5E;
+}
+
+#main #heding-page .left .link-btn{
+    /* height: 100px; */
+    width: 100%;
+    background-color: rgb(252, 252, 252);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+#main #heding-page .left .link-btn a:nth-child(1){
+    background-color: rgb(201, 201, 19);
+    color: white;
+    text-align: center;
+    font-weight: 600;
+    padding: 10px 5px;
+    border-radius: 20px;
+    text-decoration: none;
+    /* font-size: 2vw; */
+    /* font-size: small; */
+}
+
+#main #heding-page .left .link-btn a:nth-child(2){
+    background-color: rgb(13, 111, 223);
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px 5px;
+    border-radius: 20px;
+    text-decoration: none;
+    /* font-size: 2vw; */
+    font-size: small;
+}
+
+/* skills */
+
+#main #skills{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#main #skills #font-skill{
+    /* background-color: rgb(237, 153, 153); */
+    height: 400px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#main #skills #font-skill .html .loader{
+    color: #DD4B25;
+}
+
+#main #skills #font-skill .css .loader{
+    color: #254BDD;
+}
+
+#main #skills #font-skill .js .loader{
+    color: #EFD81D;
+}
+
+#main #skills #font-skill .bs .loader{
+    color: #8512F3;
+}
+
+#main #skills #font-skill .react .loader{
+    color: #5ED3F3;
+}
+
+#main #skills #font-skill .gsap .loader{
+    color: #1AE652;
+}
+
+#main #skills #font-skill .loco .loader{
+    color: #D4C9C9;
+}
+
+#main #skills #back-skill{
+    /* background-color: blue; */
+    height: 400px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#main #skills #back-skill .node .loader{
+    color: #74AD5E;
+}
+
+#main #skills #back-skill .ej .loader{
+    color: #5D5E5D;
+}
+
+#main #skills #back-skill .mdb .loader{
+    color: #00E68F;
+}
+
+#main #skills #back-skill .git .loader{
+    color: black;
+}
+
+#main .h3{
+    text-align: center;
+    font-size: small;
+    width: 15%;
+    background-color: #dcf7fe;
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: 43%;
+    border-bottom: 2px solid rgb(131, 122, 122);
+}
+
+
+
+/* HTML: <div class="loader"></div> */
+.loader {
+    width: 120px;
+    height: 22px;
+    border-radius: 20px;
+    color: #DD4B25;
+    border: 2px solid;
+    position: relative;
+  }
+  .loader::before {
+    content: "";
+    position: absolute;
+    margin: 2px;
+    inset: 0 100% 0 0;
+    border-radius: inherit;
+    background: currentColor;
+    animation: l6 2s infinite;
+  }
+  @keyframes l6 {
+      100% {inset:0}
+  }
+
+
+
+
 
 
 
@@ -61,4 +264,22 @@ body {
         font-weight: 800;
         font-size: 3vw;
     }
+
+    /* #main #heding-page .left h2, span, p{
+        font-size: 2.5vw;
+    } */
+
+    #main #heding-page {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        /* gap: 70px; */
+    }
 }
+
+/* @media screen and (max-width: 620px) {
+    #main #heding-page .left .link-btn a{
+        font-size: 1vw;
+    }
+} */
