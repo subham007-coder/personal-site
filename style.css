@@ -12,6 +12,14 @@ body {
 }
 
 /* main and nav */
+
+#main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
 #main .nav {
   display: flex;
   align-items: center;
@@ -140,6 +148,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 
 #main #skills #font-skill {
@@ -183,7 +192,7 @@ p {
 
 #main #skills #back-skill {
   /* background-color: blue; */
-  height: 400px;
+  height: 225px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -211,11 +220,11 @@ p {
 #main .h3 {
   text-align: center;
   font-size: small;
-  width: 15%;
+  width: fit-content;
+  margin-top: 10px;
   background-color: #dcf7fe;
   border-radius: 5px;
   padding: 5px;
-  margin-left: 43%;
   border-bottom: 2px solid rgb(131, 122, 122);
 }
 
@@ -242,6 +251,49 @@ p {
     inset: 0;
   }
 }
+
+#main #educations .line {
+  height: 360px;
+  width: 5px;
+  border-radius: 5px;
+  background: rgb(195, 250, 173);
+  background: linear-gradient(
+    0deg,
+    rgba(195, 250, 173, 1) 0%,
+    rgba(255, 234, 35, 1) 100%
+  );
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 120px;
+  flex-direction: column;
+}
+
+#main #educations .line .dot{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(70, 7, 65);
+    display: flex;
+    align-items: center;
+}
+
+#main #educations .line .dot p{
+    margin-left: 20px;
+    height: 50px;
+    width: 300px;
+}
+
+
+
+
+
+
+
+
+
+
 
 /* media */
 
