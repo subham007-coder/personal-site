@@ -228,6 +228,10 @@ p {
   border-bottom: 2px solid rgb(131, 122, 122);
 }
 
+/* #main .h3:nth-child(3){
+  margin-top: 100px;
+} */
+
 /* HTML: <div class="loader"></div> */
 .loader {
   width: 120px;
@@ -277,18 +281,48 @@ p {
     background-color: rgb(70, 7, 65);
     display: flex;
     align-items: center;
-}
-
-#main #educations .line .dot p{
+  }
+  
+  #main #educations .line .dot p{
     margin-left: 20px;
-    height: 50px;
+    height: auto;
     font-size: 15px;
+    background-color: #dfd70786;
+    padding: 10px 5px;
+    border-radius: 10px;
 }
 
+#main #projects{
+  margin-top: 20px;
+  /* height: 300px; */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+}
 
+#main #projects .card{
+  width: 200px;
+  height: 200px;
+  text-align: center;
+}
 
+#main #projects .card:hover{
+  opacity: 0.7;
+}
 
+#main #projects .card a{
+  height: 100%;
+  text-decoration: none;
+  width: 100%;
+}
 
+#main #projects .card a img{
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+}
 
 
 
@@ -330,4 +364,19 @@ p {
     justify-content: center;
     flex-direction: column;
   }
+
+  
+#main #projects{
+  margin-top: 20px;
+  /* height: 300px; */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 100px;
+
+}
+
+
 }
