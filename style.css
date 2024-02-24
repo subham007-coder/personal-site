@@ -157,7 +157,7 @@ p {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   flex-direction: column;
   gap: 10px;
 }
@@ -253,7 +253,7 @@ p {
 }
 
 #main #educations .line {
-  height: 360px;
+  height: 560px;
   width: 5px;
   border-radius: 5px;
   background: rgb(195, 250, 173);
@@ -266,7 +266,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 120px;
+  gap: 200px;
   flex-direction: column;
 }
 
@@ -282,7 +282,7 @@ p {
 #main #educations .line .dot p{
     margin-left: 20px;
     height: 50px;
-    width: 300px;
+    font-size: 15px;
 }
 
 
