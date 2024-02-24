@@ -308,7 +308,7 @@ background: linear-gradient(351deg, rgba(195,250,173,1) 48%, rgb(221, 150, 253) 
   display: flex;
   align-items: center;
   justify-content: space-around;
-  gap: 20px;
+  /* gap: 20px; */
 }
 
 #main #projects .card {
@@ -320,6 +320,10 @@ background: linear-gradient(351deg, rgba(195,250,173,1) 48%, rgb(221, 150, 253) 
 
 #main #projects .card:hover {
   opacity: 0.7;
+}
+
+#main #projects .card h4{
+  font-size: medium;
 }
 
 #main #projects .card a {
@@ -341,15 +345,6 @@ background: linear-gradient(351deg, rgba(195,250,173,1) 48%, rgb(221, 150, 253) 
   align-items: center;
   justify-content: space-around;
 }
-
-
-
-
-
-
-
-
-
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
 
@@ -520,7 +515,7 @@ background: linear-gradient(351deg, rgba(195,250,173,1) 48%, rgb(221, 150, 253) 
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
-    gap: 100px;
+    gap: 50px;
   }
 
   #main .contbox{
