@@ -20,42 +20,12 @@ body {
   flex-direction: column;
 }
 
-.nav {
-  display: flex;
-  align-items: center;
-  height: 50px;
-  width: 100%;
-  background-color: rgb(24, 27, 109);
-  justify-content: space-around;
-  padding: 10px 20px;
-}
-
-.sticky {
+.bg-body-tertiary {
+  background-color: rgb(236, 237, 247) !important;
   position: fixed;
-  z-index: 10000;
   top: 0;
   left: 0;
-}
-
-.nav .nameofme h5 {
-  color: #fff;
-  font-weight: 800;
-  font-size: 2vw;
-}
-
-.nav .nav-part1 a {
-  color: #fff;
-  font-size: 2vw;
-  text-decoration: none;
-}
-
-.nav .nav-part2 i {
-  font-size: 2vw;
-  cursor: pointer;
-}
-
-.nav .hambarger {
-  visibility: hidden;
+  width: 100%;
 }
 
 /* header */
@@ -65,7 +35,7 @@ body {
   align-items: center;
   justify-content: center;
   /* gap: 70px; */
-  margin-top: 15px;
+  margin-top: 55px;
 }
 
 #main #heding-page .left {
@@ -475,14 +445,6 @@ p {
 /* media */
 
 @media screen and (max-width: 700px) {
-  .nav .hambarger {
-    visibility: visible;
-  }
-
-  .nav .nav-part1,
-  .nav-part2 {
-    visibility: hidden;
-  }
 
   .nav .nameofme h5 {
     color: #fff;
@@ -500,7 +462,7 @@ p {
     justify-content: center;
     flex-direction: column;
     /* gap: 70px; */
-    margin-top: 15px;
+    margin-top: 55px;
   }
   #main #skills {
     display: flex;
