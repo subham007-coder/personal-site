@@ -3,7 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -12,33 +17,39 @@
       referrerpolicy="no-referrer"
     />
     <title>Subham Das</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="main">
-      <div class="nav">
-        <div class="nameofme">
-          <h5>👨‍💻 Subham Das</h5>
-        </div>
-        <div class="nav-part1">
-          <a href="">HOME</a>
-          <a href="">SKILLS</a>
-          <a href="">EDUCATIONS</a>
-          <a href="">PROJECTS</a>
-          <a href="">CONTACT</a>
-        </div>
-        <div class="nav-part2">
-          <i class="fa-brands fa-linkedin" style="color: #d75bd3"></i>
-          <i class="fa-brands fa-square-github" style="color: #d75bd3"></i>
-          <i class="fa-brands fa-square-whatsapp" style="color: #d75bd3"></i>
-          <i class="fa-solid fa-envelope" style="color: #d75bd3"></i>
-        </div>
-        <div class="hambarger">
-          <i class="fa-solid fa-bars" style="color: #fff"></i>
-        </div>
+    <div class="nav sticky">
+      <div class="nameofme">
+        <h5>👨‍💻 Subham Das</h5>
       </div>
+      <div class="nav-part1">
+        <a href="">HOME</a>
+        <a href="">SKILLS</a>
+        <a href="">EDUCATIONS</a>
+        <a href="">PROJECTS</a>
+        <a href="">CONTACT</a>
+      </div>
+      <div class="nav-part2">
+        <i class="fa-brands fa-linkedin" style="color: #d75bd3"></i>
+        <i class="fa-brands fa-square-github" style="color: #d75bd3"></i>
+        <i class="fa-brands fa-square-whatsapp" style="color: #d75bd3"></i>
+        <i class="fa-solid fa-envelope" style="color: #d75bd3"></i>
+      </div>
+      <div class="hambarger">
+        <i class="fa-solid fa-bars" style="color: #fff"></i>
+      </div>
+    </div>
 
-      <div id="heding-page">
+
+    <div id="main" data-scroll-container>
+
+      <div id="heding-page" data-scroll>
         <div class="left">
           <h2>I'm <span style="color: #e88538">SUBHAM DAS</span></h2>
           <h4>
@@ -65,71 +76,72 @@
           <img src="subham cop.jpg" alt="" />
         </div>
       </div>
-      <h3 class="h3">MY SKILLS</h3>
+      <h3 class="h3" data-scroll data-scroll-speed="-1" data-scroll-direction="horizontal">MY SKILLS</h3>
       <br />
-      <div id="skills">
+
+      <div id="skills" data-scroll data-scroll-speed="-1" data-scroll-direction="horizontal">
         <div id="font-skill">
-          <div class="html">
+          <div class="html ani">
             <h4>HTML</h4>
             <div class="loader"></div>
           </div>
 
-          <div class="css">
+          <div class="css ani">
             <h4>CSS</h4>
             <div class="loader"></div>
           </div>
 
-          <div class="js">
+          <div class="js ani">
             <h4>JavaScript</h4>
             <div class="loader"></div>
           </div>
 
-          <div class="react">
+          <div class="react ani">
             <h4>REACT</h4>
             <div class="loader"></div>
           </div>
 
-          <div class="bs">
+          <div class="bs ani">
             <h4>BOOTSTRAP</h4>
             <div class="loader"></div>
           </div>
 
-          <div class="gsap">
+          <div class="gsap ani">
             <h4>GSAP</h4>
             <div class="loader"></div>
           </div>
 
-          <div class="loco">
+          <div class="loco ani">
             <h4>LOCOMOTIVE JS</h4>
             <div class="loader"></div>
           </div>
         </div>
 
         <div id="back-skill">
-          <div class="node">
+          <div class="node ani">
             <h4>NODE JS</h4>
             <div class="loader"></div>
           </div>
 
-          <div class="ej">
+          <div class="ej ani">
             <h4>EXPRESS JS</h4>
             <div class="loader"></div>
           </div>
 
-          <div class="mdb">
+          <div class="mdb ani">
             <h4>MONGO DB</h4>
             <div class="loader"></div>
           </div>
 
-          <div class="git">
+          <div class="git ani">
             <h4>GIT & GITHUB</h4>
             <div class="loader"></div>
           </div>
         </div>
       </div>
 
-      <h3 class="h3">MY EDUCATION</h3>
-      <div id="educations">
+      <h3 class="h3" data-scroll data-scroll-speed="-1" data-scroll-direction="horizontal">MY EDUCATION</h3>
+      <div id="educations" data-scroll data-scroll-speed="-1" data-scroll-direction="horizontal">
         <div class="line">
           <div class="dot">
             <p>College: Sree Chaitanya College Habra B.A (2022)</p>
@@ -149,103 +161,154 @@
         </div>
       </div>
 
-      <h3 class="h3" style="margin-top: 80px">MY PROJECTS</h3>
+      <h3 class="h3" data-scroll data-scroll-speed="-1" data-scroll-direction="horizontal" style="margin-top: 80px">MY PROJECTS</h3>
 
-      <div id="projects">
-
+      <div id="projects" data-scroll data-scroll-speed="-1" data-scroll-direction="horizontal">
         <div class="card">
-        <a target="_blank" href="https://stayday.onrender.com/listings">
-          <img src="https://res.cloudinary.com/dorr3ymsl/image/upload/v1707918216/wanderlust_DEV/y0rnxc0frlpxh7udo4yp.jpg" alt="">
-          <h4>Wanderlust</h4>
+          <a target="_blank" href="https://stayday.onrender.com/listings">
+            <img
+              src="https://res.cloudinary.com/dorr3ymsl/image/upload/v1707918216/wanderlust_DEV/y0rnxc0frlpxh7udo4yp.jpg"
+              alt=""
+            />
+            <h4>Wanderlust</h4>
           </a>
         </div>
 
-
         <div class="card">
-        <a target="_blank" href="https://subham007-coder.github.io/Spotify-web/">
-          <img src="https://1000logos.net/wp-content/uploads/2017/08/Color-Spotify-Logo.jpg" alt="">
-          <h4>Spotify-web</h4>
+          <a
+            target="_blank"
+            href="https://subham007-coder.github.io/Spotify-web/"
+          >
+            <img
+              src="https://1000logos.net/wp-content/uploads/2017/08/Color-Spotify-Logo.jpg"
+              alt=""
+            />
+            <h4>Spotify-web</h4>
           </a>
         </div>
-        
-        <div class="card">
-        <a target="_blank" href="https://subham007-coder.github.io/simon-says-game-phone/">
-          <img src="https://www.kudit.com/applications/simon/images/screenshot.png" alt="">
-          <h4>Simon Says Game</h4>
-        </a>
-        </div>
 
+        <div class="card">
+          <a
+            target="_blank"
+            href="https://subham007-coder.github.io/simon-says-game-phone/"
+          >
+            <img
+              src="https://www.kudit.com/applications/simon/images/screenshot.png"
+              alt=""
+            />
+            <h4>Simon Says Game</h4>
+          </a>
+        </div>
       </div>
 
-      <h3 class="h3" style="margin-top: 80px">MY CONTACT</h3>
+      <h3 data-scroll data-scroll-speed="-1" data-scroll-direction="horizontal" class="h3" style="margin-top: 80px">MY CONTACT</h3>
 
-      <div class="contbox">
-
+      <div class="contbox" data-scroll data-scroll-speed="-1" data-scroll-direction="horizontal">
         <div class="left">
           <p><i class="fa-solid fa-paper-plane"></i> dsubham109@gmail.com</p>
           <p><i class="fa-solid fa-phone"></i> 7908963495</p>
-        </div>  
+        </div>
 
         <div class="right">
-
           <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Your Name</label>
-            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="my name">
+            <label for="exampleFormControlInput1" class="form-label"
+              >Your Name</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="exampleFormControlInput1"
+              placeholder="my name"
+            />
           </div>
 
           <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            <label for="exampleFormControlInput1" class="form-label"
+              >Email address</label
+            >
+            <input
+              type="email"
+              class="form-control"
+              id="exampleFormControlInput1"
+              placeholder="name@example.com"
+            />
           </div>
           <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Your Message</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            <br>
+            <label for="exampleFormControlTextarea1" class="form-label"
+              >Your Message</label
+            >
+            <textarea
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              rows="3"
+            ></textarea>
+            <br />
             <button class="btn btn-success">Submit</button>
           </div>
         </div>
       </div>
 
- <footer class="footer">
-    <div class="waves">
-      <div class="wave" id="wave1"></div>
-      <div class="wave" id="wave2"></div>
-      <div class="wave" id="wave3"></div>
-      <div class="wave" id="wave4"></div>
+      <footer class="footer" data-scroll>
+        <div class="waves">
+          <div class="wave" id="wave1"></div>
+          <div class="wave" id="wave2"></div>
+          <div class="wave" id="wave3"></div>
+          <div class="wave" id="wave4"></div>
+        </div>
+        <ul class="social-icon">
+          <li class="social-icon__item">
+            <a class="social-icon__link" href="#">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+          <li class="social-icon__item">
+            <a class="social-icon__link" href="#">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+          <li class="social-icon__item">
+            <a
+              class="social-icon__link"
+              target="_blank"
+              href="http://linkedin.com/in/subham-das-84130427b"
+            >
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+          <li class="social-icon__item">
+            <a class="social-icon__link" href="#">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+        </ul>
+        <ul class="menu">
+          <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">About</a></li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Services</a>
+          </li>
+          <li class="menu__item"><a class="menu__link" href="#">Team</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+        </ul>
+        <p>&copy;2024 Subham Das | All Rights Reserved</p>
+      </footer>
     </div>
-    <ul class="social-icon">
-      <li class="social-icon__item"><a class="social-icon__link" href="#">
-          <ion-icon name="logo-facebook"></ion-icon>
-        </a></li>
-      <li class="social-icon__item"><a class="social-icon__link" href="#">
-          <ion-icon name="logo-twitter"></ion-icon>
-        </a></li>
-      <li class="social-icon__item"><a class="social-icon__link" target="_blank" href="http://linkedin.com/in/subham-das-84130427b">
-          <ion-icon name="logo-linkedin"></ion-icon>
-        </a></li>
-      <li class="social-icon__item"><a class="social-icon__link" href="#">
-          <ion-icon name="logo-instagram"></ion-icon>
-        </a></li>
-    </ul>
-    <ul class="menu">
-      <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
-      <li class="menu__item"><a class="menu__link" href="#">About</a></li>
-      <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
-      <li class="menu__item"><a class="menu__link" href="#">Team</a></li>
-      <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
 
-    </ul>
-    <p>&copy;2024 Subham Das | All Rights Reserved</p>
-  </footer>
-  
-  
-  
-  
-</div>
-
-<script src="script.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+    ></script>
+    <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
   </body>
 </html>
